@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+        }
+        .header nav a {
+            margin: 0 1rem;
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+        .header nav a:hover {
+            color: #000;
+        }
+        .main-content {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .main-content h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .main-content p {
+            color: #666;
+            margin: 1rem 0;
+        }
+        .main-content button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .main-content button:hover {
+            background-color: #ff6347;
+        }
+        .about-section {
+            background-color: #f5f5f5;
+            padding: 2rem 1rem;
+        }
+        .about-section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .about-section p {
+            color: #666;
+            margin: 1rem 0;
+        }
+        .about-section .social-icons a {
+            margin: 0 0.5rem;
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+        .about-section .social-icons a:hover {
+            color: #000;
+        }
+        .featured-posts {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+        .featured-posts .post {
+            text-align: center;
+        }
+        .featured-posts .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .featured-posts .post p {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .main-content {
+                text-align: left;
+            }
+            .main-content img {
+                width: 100%;
+            }
+            .featured-posts {
+                flex-direction: column;
+                align-items: center;
+            }
+            .featured-posts .post {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h2>PodHub</h2>
+        </div>
+        <nav>
+            <a href="#">Services</a>
+            <a href="#">Work</a>
+            <a href="#">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <h2>Topic</h2>
+                <h1>Membuat Apa Yang Bisa Kita Buat</h1>
+                <p>Ketika ilmumu hanya sekedar masa lalu saja buat apa kamu berpayah-payah dengannya.</p>
+                <button>Call to action</button>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+                <img src="https://itkoding.com/wp-content/uploads/2023/07/gambar-kartun-lucu.jpg" alt="A group of people posing for a photo in an office setting">
+            </div>
+        </section>
+    </main>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <h2>About us</h2>
+                <p>Teknologi bukanlah apa-apa. Hal yang penting adalah kamu memiliki keyakinan terhadap orang lain, dimana mereka pada dasarnya baik dan pintar, dan jika kamu memberikan mereka peralatan, mereka akan melakukan hal yang menakjubkan dengan alat-alat itu. - Steve Jobs</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+                <div class="featured-posts">
+                    <div class="post">
+                        <img src="https://i1.wp.com/furniturejeparaterbaik.files.wordpress.com/2020/06/f9667-tenor2b2528532529.gif" alt="Two people looking at a tablet and smiling">
+                        <p>Featured Blog Post 1</p>
+                    </div>
+                    <div class="post">
+                        <footer>
+                ARYA PRAMUDIA SURYA NDARU - 243307034
+              </footer>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
